@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    color:#404f54;
+}
+
+a,li{
+    text-decoration: none;
+    list-style: none;
+    color:#404f54;
+}
+
+input{
+    border: none;
+    outline: none;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Lora", serif;
+}
+
+.paddingx{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.bgVoilet{
+    background-color: #d02083;
+}
+
+.bgGreen{
+    background-color: #1baba1;
+}
+
+.widthFit{
+    width: fit-content;
+}
+
+navbar{
+    font-size: 0.75em;
+    box-shadow: 0px 0px 9px -7px black;
+    padding: 20px 0;
+    z-index: 100;
+}
+
+.logo{
+    font-weight: 600;
+    -webkit-text-stroke: 0.1px;
+    font-size: 22px;
+    padding: 8px 11px;
+}
+
+.navLSection{
+    width: 57%;
+}
+
+.navItems{
+    width: 85%;
+}
+
+.navRSection{
+    width: 31%;
+} 
+
+.logSign{
+    width: 39%;
+}
+
+.postButt{
+    color: #1baba1;
+    border: 1.8px solid #1baba1;
+    padding: 7px 11%;
+}
+
+.searchSection{
+    background-image: url('../public/images/mainImg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 82px;
+    height: calc(100vh - 82px);
+}
+
+.searchSection>h1{
+    font-size: 2.6em;
+}
+
+.searchSection>p{
+    font-size: 1.06em;
+}
+
+.searchSection>.input{
+    width: 45%;
+}
+
+.input>input{
+    font-size: 0.7em;
+    padding: 18px 0;
+    box-shadow: 0px 4px 6px 0px #0000005c;
+}
+
+.button{
+    right: 7px;
+    font-size: 0.7em;
+    padding: 13.5px 35px;
+}
+
+h5{
+    font-size: 1.3em;
+}
+
+.hire h6{
+    color: #1baba1;
+}
+
+.hire p{
+    font-size: 0.8em;
+    hyphens: auto;
+    -webkit-text-stroke: 0.1px;
+    margin-top: 10.5px !important;
+}
+
+.developerTxt{
+    padding-left: 4%;
+    padding-right: 14%;
+}
+
+
+.developerTxt p{
+    font-size: 0.82em;
+    -webkit-text-stroke: 0.1px;
+    margin-top: 10.5px !important;
+}
+
+.developerTxt a{
+    color: #1baba1;
+    font-size: 0.82em;
+}
+
+
+.icon{
+    width: 40px;
+}
+
+.serviceCardBox{
+    padding: 0 14%;
+}
+
+.serviceCard{
+    padding: 28px 16px;
+}
+
+.serviceCard img{
+    object-fit: contain;
+    height: 50px;
+}
+
+.serviceCard p{
+    font-size: 0.81em;
+    -webkit-text-stroke: 0.1px;
+}
+
+.services .button{
+    padding: 12px 32px;
+
+}
+
+.workIcon{
+    width: 110px;
+}
+
+.workCard .bar{
+    height: 2px;
+    margin: 20px 0;
+}
+
+.workCard h5{
+    font-size: 1.1em;
+}
+
+.workCard p{
+    font-size: 0.8em;
+}
