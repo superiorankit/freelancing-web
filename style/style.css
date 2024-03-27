@@ -1,81 +1,127 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Open Sans", sans-serif;
-    color:#404f54;
+    color: #404f54;
 }
 
-a,li{
+.robotoFont {
+    font-family: "Roboto", sans-serif;
+}
+
+a,
+li {
     text-decoration: none;
     list-style: none;
-    color:#404f54;
+    color: #404f54;
 }
 
-input{
+input {
     border: none;
     outline: none;
 }
 
+input::placeholder {
+    color: #cccccc;
+}
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Lora", serif;
 }
 
-.paddingx{
+.paddingx {
     padding-left: 15%;
     padding-right: 15%;
 }
 
-.bgVoilet{
-    background-color: #d02083;
+.bgVoilet {
+    background-color: #d02083 !important;
 }
 
-.bgGreen{
+.bgGreen {
     background-color: #1baba1;
 }
 
-.widthFit{
+.widthFit {
     width: fit-content;
 }
 
-navbar{
+.textStroke {
+    -webkit-text-stroke: 0.1px;
+}
+
+navbar {
     font-size: 0.75em;
     box-shadow: 0px 0px 9px -7px black;
     padding: 20px 0;
     z-index: 100;
 }
 
-.logo{
+.logo {
     font-weight: 600;
-    -webkit-text-stroke: 0.1px;
     font-size: 22px;
     padding: 8px 11px;
 }
 
-.navLSection{
-    width: 57%;
+.navItemsBox {
+    width: 100%;
 }
 
-.navItems{
-    width: 85%;
+.navItems {
+    width: 55%;
 }
 
-.navRSection{
-    width: 31%;
-} 
+.navRSection {
+    width: 32%;
+}
 
-.logSign{
+.logSign {
     width: 39%;
 }
 
-.postButt{
+.postButt {
     color: #1baba1;
     border: 1.8px solid #1baba1;
-    padding: 7px 11%;
+    padding: 7px 25px;
 }
 
-.searchSection{
+.postButt:hover{
+    cursor: pointer;
+    background-color:#d02083;
+    color: white;
+}
+
+.hamBurg{
+    width: 25px;
+    height: 17px;
+}
+
+.bar{
+    height: 2px;
+    transition: all 0.2s;
+}
+
+#checkbox:checked ~ label .bar1{
+    transform: rotate(45deg) translateY(10px);
+    background-color: white !important;
+}
+
+#checkbox:checked ~ label .bar2{
+    display: none;
+}
+
+#checkbox:checked ~ label .bar3{
+    transform: rotate(-45deg) translateY(-10px);
+    background-color: white !important;
+}
+
+.searchSection {
     background-image: url('../public/images/mainImg.jpg');
     background-repeat: no-repeat;
     background-position: center;
@@ -84,103 +130,404 @@ navbar{
     height: calc(100vh - 82px);
 }
 
-.searchSection>h1{
+.searchSection>h1 {
     font-size: 2.6em;
 }
 
-.searchSection>p{
+.searchSection>p {
     font-size: 1.06em;
 }
 
-.searchSection>.input{
-    width: 45%;
+.searchSection>.input {
+    width: 65%;
 }
 
-.input>input{
-    font-size: 0.7em;
+.input>input {
+    font-size: 0.73em;
     padding: 18px 0;
     box-shadow: 0px 4px 6px 0px #0000005c;
 }
 
-.button{
+.button {
     right: 7px;
     font-size: 0.7em;
     padding: 13.5px 35px;
 }
 
-h5{
+h5 {
     font-size: 1.3em;
 }
 
-.hire h6{
+
+.hire h6 {
     color: #1baba1;
 }
 
-.hire p{
+.hireTxt {
+    width: 202px;
+}
+
+.hire p {
     font-size: 0.8em;
     hyphens: auto;
-    -webkit-text-stroke: 0.1px;
     margin-top: 10.5px !important;
 }
 
-.developerTxt{
+.developerTxt {
     padding-left: 4%;
     padding-right: 14%;
 }
 
 
-.developerTxt p{
+.developerTxt p {
     font-size: 0.82em;
-    -webkit-text-stroke: 0.1px;
     margin-top: 10.5px !important;
 }
 
-.developerTxt a{
+.developerTxt a {
     color: #1baba1;
     font-size: 0.82em;
 }
 
-
-.icon{
-    width: 40px;
-}
-
-.serviceCardBox{
-    padding: 0 14%;
-}
-
-.serviceCard{
+.serviceCard {
     padding: 28px 16px;
 }
 
-.serviceCard img{
+.serviceCard:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 27px 0px #00000017;
+}
+
+.serviceCard img {
     object-fit: contain;
     height: 50px;
 }
 
-.serviceCard p{
+.serviceCard p {
     font-size: 0.81em;
-    -webkit-text-stroke: 0.1px;
 }
 
-.services .button{
+.services .button {
     padding: 12px 32px;
 
 }
 
-.workIcon{
-    width: 110px;
+.workIcon img {
+    object-fit: contain;
+    height: 95px;
 }
 
-.workCard .bar{
+.workCard .bar {
     height: 2px;
     margin: 20px 0;
 }
 
-.workCard h5{
+.workCard h5 {
     font-size: 1.1em;
 }
 
-.workCard p{
+.workCard p {
     font-size: 0.8em;
+}
+
+.upHead {
+    font-size: 0.6em;
+    letter-spacing: 1;
+}
+
+.planCard{
+    width: 285px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.planCard:hover{
+    box-shadow: 0px 0px 27px 0px #00000017;
+}
+
+.planCard:hover .price{
+    
+    background-color: #d02083 !important;
+}
+
+.planCard:hover .price p,.planCard:hover .price span {
+    color: white !important;
+}
+
+.price {
+    padding: 35px 0;
+    transition: all 0.3s;
+}
+
+.price p:nth-child(1) {
+    font-size: 0.88em;
+
+}
+
+.price p:nth-child(2) {
+    font-size: 0.7em;
+}
+
+.price p:nth-child(3) {
+    font-size: 0.9em;
+    margin-top: 10px !important;
+}
+
+.price p:nth-child(3)>span {
+    color: #d02083;
+}
+
+.planBenefit {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    padding-left: 62px;
+}
+
+.planBenefit a {
+    font-size: 0.82em;
+}
+
+.customerCardBox {
+    margin-top: 85px;
+    height: 200px;
+}
+
+.customerCardBox>div{
+    perspective: 500px;
+}
+
+.customerCard {
+    width: 265px;
+    transition: all 0.5s;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    height: 200px;
+}
+
+.customerCardBox>div:hover .customerCard{
+    transform: rotateY(180deg);
+    background-color:#1baba1;
+}
+
+@keyframes imageBounce {
+
+    0%{
+        top:0px;
+    }
+
+    50%{
+        top: -100px;
+    }
+
+    100%{
+        top:0px !important;
+    }
+    
+}
+
+.customerCard img {
+    width: 70px;
+    top: 0px;
+
+}
+
+.customerCardBox>div:hover img{
+    animation: imageBounce 0.5s linear 1 normal forwards;
+    transform: translate(-50%, -50%) rotateY(-180deg) !important;
+}
+
+.front, .back{
+    backface-visibility: hidden;
+}
+
+.back{
+    transform: rotateY(180deg);
+}
+
+.back p{
+    color: white;
+}
+
+.customerCard p {
+    font-size: 0.85em;
+    hyphens: auto;
+}
+
+.reviewIcons img {
+    width: 115px;
+}
+
+.footDesc {
+    font-size: 0.72em;
+    line-height: 1.7;
+}
+
+.footSocial p {
+    font-size: 0.8em
+}
+
+.footSocial img {
+    height: 13px;
+}
+
+.footEmailBox input {
+    width: 190px !important;
+    font-size: 0.73em;
+}
+
+.footEmailBox .butt {
+    padding: 0 35px;
+    font-size: 0.72em;
+}
+
+.footCard>p {
+    line-height: 0;
+    font-size: 0.72em;
+}
+
+.blogCard{
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.blogCard:hover{
+    transform: scale(1.1);
+}
+
+.blogCard img {
+    width: 95px;
+}
+
+.blogTxt p:nth-child(1) {
+    font-size: 0.6em;
+}
+
+.blogTxt p:nth-child(2) {
+    font-size: 0.65em;
+    -webkit-text-stroke: 0.2px;
+}
+
+.instaGrid img {
+    width: 65px;
+    margin: 0.5px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.instaGrid img:hover{
+    transform: scale(1.1);
+}
+
+.insta a {
+    font-size: 0.6em;
+}
+
+.freePsdTxt {
+    font-size: 0.7em;
+    color: rgb(0 0 0 / 40%);
+}
+
+
+.button:hover,.butt:hover{
+    cursor: pointer;
+    background-color: #df51a1 !important;
+}
+@media screen and (max-width: 460px) {
+
+    .paddingx {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    p {
+        text-align: justify !important;
+    }
+
+
+    .navItemsBox{
+        position: absolute;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    padding: 75px 0;
+    background-color: #000000c7;
+    color: white !important;
+    transform: scale(0);
+    transform-origin: 100% 0;
+    transition: all 0.5s;
+    }
+
+    .navItems a{
+        color: white;
+    }
+
+    #checkbox:checked ~ .navItemsBox{
+        transform: scale(1);
+    }
+
+    .navRSection{
+        flex-direction: column;
+    width: 85%;
+    height: 17%;
+    }
+
+    .navRSection p{
+        color: white !important;
+    }
+
+    .navRSection .postButt{
+        color: white !important;
+    }
+
+    .navItems{
+        flex-direction: column;
+    height: 65%;
+    }
+
+    .searchSection {
+        font-size: 0.6em;
+        text-align: center;
+    }
+
+    .searchSection .input {
+        width: 100% !important;
+        font-size: 1.2em;
+    }
+
+    .input>input {
+        font-size: 0.73em;
+        padding: 13px 12px !important;
+    }
+
+    .hireHead {
+        width: 100%;
+        text-align: center !important;
+    }
+
+    .hire h6 {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .button {
+        padding: 9.5px 28px;
+    }
+
+    .teamDevelopers {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .developerTxt {
+        padding: 0;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .price p{
+        text-align: center !important;
+    }
+
 }
