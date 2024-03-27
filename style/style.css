@@ -56,6 +56,10 @@ h6 {
     -webkit-text-stroke: 0.1px;
 }
 
+.cursorPointer{
+    cursor: pointer;
+}
+
 navbar {
     font-size: 0.75em;
     box-shadow: 0px 0px 9px -7px black;
@@ -64,14 +68,10 @@ navbar {
 }
 
 .logo {
-    font-weight: 600;
     font-size: 22px;
     padding: 8px 11px;
 }
 
-.navItemsBox {
-    width: 100%;
-}
 
 .navItems {
     width: 55%;
@@ -92,7 +92,6 @@ navbar {
 }
 
 .postButt:hover{
-    cursor: pointer;
     background-color:#d02083;
     color: white;
 }
@@ -164,7 +163,7 @@ h5 {
 }
 
 .hireTxt {
-    width: 202px;
+    width: 208px;
 }
 
 .hire p {
@@ -194,7 +193,6 @@ h5 {
 }
 
 .serviceCard:hover{
-    cursor: pointer;
     box-shadow: 0px 0px 27px 0px #00000017;
 }
 
@@ -238,7 +236,6 @@ h5 {
 .planCard{
     width: 285px;
     transition: all 0.3s;
-    cursor: pointer;
 }
 
 .planCard:hover{
@@ -278,9 +275,7 @@ h5 {
 }
 
 .planBenefit {
-    padding-top: 40px;
-    padding-bottom: 30px;
-    padding-left: 62px;
+    padding: 40px 0px 30px 62px;
 }
 
 .planBenefit a {
@@ -289,7 +284,6 @@ h5 {
 
 .customerCardBox {
     margin-top: 85px;
-    height: 200px;
 }
 
 .customerCardBox>div{
@@ -299,7 +293,6 @@ h5 {
 .customerCard {
     width: 265px;
     transition: all 0.5s;
-    cursor: pointer;
     transform-style: preserve-3d;
     height: 200px;
 }
@@ -344,10 +337,6 @@ h5 {
     transform: rotateY(180deg);
 }
 
-.back p{
-    color: white;
-}
-
 .customerCard p {
     font-size: 0.85em;
     hyphens: auto;
@@ -380,6 +369,7 @@ h5 {
     font-size: 0.72em;
 }
 
+
 .footCard>p {
     line-height: 0;
     font-size: 0.72em;
@@ -387,7 +377,6 @@ h5 {
 
 .blogCard{
     transition: all 0.3s;
-    cursor: pointer;
 }
 
 .blogCard:hover{
@@ -407,11 +396,14 @@ h5 {
     -webkit-text-stroke: 0.2px;
 }
 
+.instaGrid{
+    width: 200px !important;
+}
+
 .instaGrid img {
     width: 65px;
     margin: 0.5px;
     transition: all 0.3s;
-    cursor: pointer;
 }
 
 .instaGrid img:hover{
@@ -429,7 +421,6 @@ h5 {
 
 
 .button:hover,.butt:hover{
-    cursor: pointer;
     background-color: #df51a1 !important;
 }
 @media screen and (max-width: 460px) {
